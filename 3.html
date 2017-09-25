@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>瀑布流</title>
+	<link rel="stylesheet" href="css/master.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/waterfall.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="container">
+			<div class="topnav clear">
+				<ul class="topnav-left">
+					<li><a href="http://www.meizu.com">魅族官网</a></li>
+					<li><a href="https://store.meizu.com/?click=wmz_public_yt_onstore">魅族商城</a></li>
+					<li><a href="https://store.meizu.com/?click=wmz_public_yt_onstore">Flyme</a></li>
+					<li><a href="http://www.meizu.com">专卖店</a></li>
+					<li><a href="http://www.meizu.com">服务</a></li>
+					<li><a href="http://www.meizu.com">社区</a></li>
+				</ul>
+				<ul class="topnav-right">
+					<li><a href="#" class="a">我的收藏</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li><a href="#" class="denglu">登录</a></li>
+					<li><a href="2.html">注册</a></li>
+				</ul>
+			</div>
+			<!-- 遮罩层 -->
+			<div class="pop">
+				<div class="pop1">
+					<div class="tab_title">快捷登录方式<a href="#"></a></div>
+					<div class="login_choose">
+						<div class="tou"></div>
+						<div class="qq"></div>
+						<div class="weixin"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav id="nav" class="clear">
+		<div class="container">
+			<div class="logo"><a href="index.html"><img src="images/logo.jpg" alt="魅族商城" title="魅族商城"></a></div>
+		<div class="menu">
+			<ul>
+				<li id="li-1"><a href="3.html">全部分类</a></li>
+				<li id="li-2"><a href="1.html">PRO手机</a></li>
+				<li id="li-3"><a href="#">魅蓝手机</a></li>
+				<li id="li-4"><a href="#">MX手机</a></li>
+				<li id="li-5"><a href="#">数码配件</a></li>
+				<li id="li-6"><a href="#">智能设备</a></li>
+			</ul>	
+		</div>
+		</div>
+		<div id="box-1" class="hidden-box">
+			<div class="container">
+				<ul>
+					<li><a href="#"><img src="images/menu-1.png" alt=""></a>
+					<p>手机</p>
+					</li>
+					<li><a href="#"><img src="images/menu-2.png" alt=""></a>
+					<p>数码影音</p>
+					</li>
+					<li><a href="#"><img src="images/menu-3.png" alt=""></a>
+					<p>智能设备</p>
+					</li>
+					<li><a href="#"><img src="images/menu-4.png" alt=""></a>
+					<p>智能穿戴</p>
+					</li>
+					<li><a href="#"><img src="images/menu-5.png" alt=""></a>
+					<p>游戏设备</p>
+					</li>
+					<li><a href="#"><img src="images/menu-6.png" alt=""></a>
+					<p>手机配件</p>
+					</li>
+					<li><a href="#"><img src="images/menu-7.png" alt=""></a>
+					<p>办公储备</p>
+					</li>
+					<li><a href="#"><img src="images/menu-8.png" alt=""></a>
+					<p>生活周边</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="box-2" class="hidden-box">
+			<div class="container">
+				<ul>
+					<li><a href="#"><img src="images/plus.png" alt=""></a>
+					<p>
+					<span>魅族PRO 6 Plus</span><br><span>￥2999起</span>
+					</p>
+					</li>
+					<li><a href="#"><img src="images/pro6s.png" alt=""></a>
+					<p>
+					<span>魅族PRO 6s</span><br><span>￥2499起</span>
+					</p>
+					</li>
+					<li><a href="#"><img src="images/pro6.png" alt=""></a>
+					<p>
+					<span>魅族PRO 6</span><br><span>￥2299起</span>
+					</p>
+					</li>
+					<li><a href="#"><img src="images/pro5.png" alt=""></a>
+					<p>
+					<span>魅族PRO 6 Plus</span><br><span>￥2199起</span>
+					</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="box-3" class="hidden-box">
+			<div class="container">
+				<ul>
+					<li><a href="#"><img src="images/meilan1.jpg" alt=""></a>
+					<p>
+					<span>魅蓝E2</span><br><span>￥1299起</span>
+					</p>
+					</li>
+					<li><a href="#"><img src="images/meilan2.jpg" alt=""></a>
+					<p>
+					<span>魅蓝E2</span><br><span>￥1299起</span>
+					</p>
+					</li>
+					<li><a href="#"><img src="images/meilan3.jpg" alt=""></a>
+					<p>
+					<span>魅蓝E2</span><br><span>￥1299起</span>
+					</p>
+					</li>
+					<li><a href="#"><img src="images/meilan4.jpg" alt=""></a>
+					<p>
+					<span>魅蓝E2</span><br><span>￥1299起</span>
+					</p>
+					</li>
+					<li><a href="#"><img src="images/meilan5.jpg" alt=""></a>
+					<p>
+					<span>魅蓝E2</span><br><span>￥1299起</span>
+					</p>
+					</li>
+					<li><a href="#"><img src="images/meilan6.jpg" alt=""></a>
+					<p>
+					<span>魅蓝E2</span><br><span>￥1299起</span>
+					</p>
+					</li>
+					<li><a href="#"><img src="images/meilan8.jpg" alt=""></a>
+					<p>
+					<span>魅蓝E2</span><br><span>￥1299起</span>
+					</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="box-4" class="hidden-box">
+			<div class="container">
+				<ul>
+					<li><a href="#"><img src="images/mx6.png" alt=""></a>
+					<p>
+					<span>魅族MX6</span><br><span>￥1299起</span>
+					</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="box-5" class="hidden-box">
+			<div class="container">
+				<ul>
+					<li><a href="#"><img src="images/shuma1.png" alt=""></a>
+					<p>
+					<span> 魅族HD50头戴式耳机</span><br><span>￥399起</span>
+					</p>
+					</li>
+					<li><a href="#"><img src="images/shuma2.png" alt=""></a>
+					<p>
+					<span>先锋蓝牙运动耳机
+					</span><br><span>￥599起</span>
+					</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="box-6" class="hidden-box">
+			<div class="container">
+				<ul>
+					<li><a href="#"><img src="images/sb1.png" alt=""></a>
+					<p>
+					<span>乐心体重秤S1
+					</span><br><span>￥99起</span>
+					</p>
+					</li>
+					<li><a href="#"><img src="images/sb2.png" alt=""></a>
+					<p>
+					<span> 新游游戏手柄
+					</span><br><span>￥79起</span>
+					</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	</div>
+	<!-- 详情页 -->
+	<div id="main" class="clear">
+		<div class="container">
+			<section><a href="index.html">首页 ></a><a href="#">全部商品</a></section>
+			<div class="mainnav">
+				<ul class="feiling">
+					<li><a href="" style="padding-left: 0;font-size: 16px;color: #9999ac">分类:</a</li>
+					<li><a href="">手机</a></li>
+					<li><a href="">智能硬件</a></li>
+					<li><a href="">耳机 / 音箱</a></li>
+					<li><a href="">路由器 / 移动电源</a></li>
+					<li><a href="">保护套 / 后盖 / 贴膜</a></li>
+					<li><a href="">数据线 / 电源适配器</a></li>
+					<li><a href="">周边配件</a></li>
+				</ul>
+				<ul class="pinpai clear">
+					<li><a href="" style="padding-left: 0;font-size: 16px;color: #9999ac">品牌：</a></li>
+					<li><a href="">全部</a></li>
+					<li><a href="">魅族</a></li>
+					<li><a href="">耳机 / 音箱</a></li>
+					<li><a href="">乐心</a></li>
+					<li><a href="">先锋</a></li>
+					<li><a href="">暴风魔镜</a></li>
+					<li><a href="">新游</a></li>
+					<li><a href="">航嘉</a></li>
+					<li><a href="">铁三角</a></li>
+					<li><a href="">Beats</a></li>
+					<li><a href="">索尼</a></li>
+				</ul>
+			</div>
+			<div class="column clear">
+			<a href="#">推荐</a>
+			<a href="#">新品</a>
+			<a href="#">价格</a>
+			</div>
+			<div class="shop clear">
+				<div class="list">
+					<img src="images/s1.png">
+					<p>魅蓝 5s 32G版</p>
+					<p>￥ 999</p>
+				</div>
+				<div class="list">
+					<img src="images/s2.png">
+					<p>魅蓝 Note5</p>
+					<p>￥ 1099</p>
+				</div>
+				<div class="list">
+					<img src="images/s3.png">
+					<p>Hi Case趣闪保护壳</p>
+					<p>￥ 79</p>
+				</div>
+				<div class="list">
+					<img src="images/s4.png">
+					<p>乐心心率手环MAMBO2</p>
+					<p>￥ 169</p>
+				</div>
+				<div class="list">
+					<img src="images/s5.png">
+					<p>暴风魔镜 小D 虚拟现实智能VR眼镜</p>
+					<p>￥ 69</p>
+				</div>
+				<div class="list">
+					<img src="images/s6.png">
+					<p>魅蓝 5</p>
+					<p>￥ 699</p>
+				</div>
+				<div class="list">
+					<img src="images/s7.png">
+					<p>魅蓝 X</p>
+					<p>￥ 1699</p>
+				</div>
+				<div class="list">
+					<img src="images/s8.png">
+					<p>魅蓝 Note3</p>
+					<p>￥ 799</p>
+				</div>
+				<div class="list">
+					<img src="images/s9.png">
+					<p>纽曼 NM-VR30 虚拟现实智能VR眼镜 </p>
+					<p>￥ 35.9</p>
+				</div>
+				<div class="list">
+					<img src="images/s10.png">
+					<p>Beats Powerbeats3 Wireless蓝牙运动耳机</p>
+					<p>￥ 1488</p>
+				</div>
+				<div class="list">
+					<img src="images/s11.png">
+					<p>魅蓝3s</p>
+					<p>￥ 699</p>
+				</div>
+				<div class="list">
+					<img src="images/s12.png">
+					<p>魅族PRO 6s</p>
+					<p>￥ 2499</p>
+				</div>
+				<div class="list">
+					<img src="images/s13.png">
+					<p>魅族Micro USB金属数据线</p>
+					<p>￥ 29</p>
+				</div>
+				<div class="list">
+					<img src="images/s14.png">
+					<p>Beats Urbeats 入耳式重低音线控耳机</p>
+					<p>￥ 788</p>
+				</div>
+				<div class="list">
+					<img src="images/s15.png">
+					<p>魅蓝 U10</p>
+					<p>￥ 799</p>
+				</div>
+				<div class="list">
+					<img src="images/s16.png">
+					<p>三星存储卡</p>
+					<p>￥ 48.9</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

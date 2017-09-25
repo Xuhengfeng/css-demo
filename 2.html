@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页</title>
+	<link rel="stylesheet" href="css/master.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/main1.js"></script>
+</head>
+<body>
+	<div class="container">
+		<a href="index.html"><header class="dl-header"></header></a>
+	</div>
+	<div class="main1">
+		<div class="container">
+			<div class="ban">
+				<div class="dl">
+					<a href="#" class="d2">账号注册</a>
+					<a href="#" class="d3"><span>|</span>验证码登录</a>
+					<div class="form1">
+						<form action="">
+							<input type="text" name=" " placeholder="请输入你的QQ邮箱" class="i1">
+							<span class="s1"></span>
+							<input type="password" name=" " placeholder="请设置你的密码" class="i11">
+							<span class="s2"></span>
+							<div class="i2"><input type="checkbox">记住登录状态</div>
+							<a href="#" class="i3">注册</a>		
+						</form>
+					</div>
+					<div class="form2">
+						<form action="">
+							<input type="text" name=" " placeholder="手机号码" class="yz1">
+							<span class="fs1"></span>
+							<input type="text" name=" " placeholder="验证码" class="i11">
+							<span class="fs2"></span>
+							<div class="yz2"><input type="checkbox">记住登录状态</div>
+							<a href="#" class="dl3">登录</a>	
+
+						</form>
+					</div>
+					<div class="jiao">
+						<a href="#" class="a-btn"><img src="images/qr.png" alt="" class="ing"></a>
+					</div>
+					<div class="sao">
+							<p style="text-align: center;font-size: 24px">扫描安全登录</p>
+							<img src="images/mzQrShow.jpg" alt="">
+							<p>请使用最新Flyme系统相机扫码功能，扫码登录</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="foot container">
+			<div class="footop">
+				<a href="#">关于魅族</a><span>|</span>
+				<a href="#">工作机会</a><span>|</span>
+				<a href="#">联系我们</a><span>|</span>
+				<a href="#">法律声明</a><span>|</span>
+				<a href="#">常见问题</a><span>|</span>
+				<a href="#">简体中文</a><span>
+				<span>客服热线 400-788-3333</span>
+			</div>
+				<p>©2017 Meizu Telecom Equipment Co., Ltd. All rights reserved.备案号: 粤ICP备13003602号-4经营许可证编号: 粤B2-20130198营业执照</p>
+			</div>
+<!-- <script>
+	$(function(){
+		
+		var i1=document.getElementsByClassName('i1')[0];
+		var i11=document.getElementsByClassName('i11')[0];
+		var s1=document.getElementsByClassName('s1')[0];
+		var s2=document.getElementsByClassName('s2')[0];
+		var i3=document.getElementsByClassName('i3')[0];
+
+
+
+		console.log(i3);
+		i3.onclick=function(){
+		
+		//简单的正则
+		var pattern=/^[a-z0-9_-]{3,16}$/;
+		var reg=/^[a-z0-9_-]{6,18}$/;
+		
+		//检测用户是否输入
+			if(i1.value==''){
+				s1.innerHTML='请输入您的用户名';
+			}else{
+				if (pattern.test(i1.value)) {
+					s1.innerHTML='用户名输入正确';
+				}else{
+					s1.innerHTML='用户名输入错误';
+				}
+			}
+
+
+			if(i11.value==''){
+				s2.innerHTML='请输入您的密码';
+			}else{
+				if (pattern.test(i11.value)) {
+					s2.innerHTML='密码输入正确';
+				}else{
+					s2.innerHTML='密码输入错误';
+				}
+			}
+
+
+			if(pattern.test(i1.value)&&pattern.test(i11.value)){
+
+				alert('登录成功');
+
+			}
+
+		}
+
+
+		$('form>input').focus(function(){
+			$('.s1').text(' ');
+			$('.s2').text(' ');
+		});
+	
+
+	// 扫码登录
+	$('.a-btn').toggle(
+		function(){
+			$('.a-btn').children().attr('src','images/pc.png');
+			$('.sao').show();
+		},
+		function(){
+			$('.sao').hide();
+			$('.a-btn').children().attr('src','images/qr.png');
+		}
+	)
+
+	})
+</script> -->
+</body>
+</html>
